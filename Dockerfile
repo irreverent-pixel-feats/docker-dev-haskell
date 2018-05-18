@@ -30,11 +30,11 @@ RUN mkdir -p ~/bin/packages/happy \
 #  && cabal install -j pointfree \
 #  && ln -sf ~/bin/packages/pointfree/.cabal-sandbox/bin/pointfree /usr/local/bin/pointfree
 
-RUN mkdir -p ~/bin/packages/hoogle \
-  && cd ~/bin/packages/hoogle \
-  && cabal sandbox init \
-  && cabal install -j hoogle \
-  && ln -sf ~/bin/packages/hoogle/.cabal-sandbox/bin/hoogle /usr/local/bin/hoogle
+#RUN mkdir -p ~/bin/packages/hoogle \
+#  && cd ~/bin/packages/hoogle \
+#  && cabal sandbox init \
+#  && cabal install -j hoogle \
+#  && ln -sf ~/bin/packages/hoogle/.cabal-sandbox/bin/hoogle /usr/local/bin/hoogle
 
 RUN mkdir -p ~/bin/packages/hasktags \
   && cd ~/bin/packages/hasktags \
