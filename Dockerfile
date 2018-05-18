@@ -1,4 +1,4 @@
-FROM irreverentpixelfeats/dev-base:ubuntu_xenial-20180427074524-90295cd
+FROM irreverentpixelfeats/dev-base:ubuntu_xenial-20180518002608-1e19e96
 MAINTAINER Dom De Re <domdere@irreverentpixelfeats.com>
 
 ARG GHC_VERSION
