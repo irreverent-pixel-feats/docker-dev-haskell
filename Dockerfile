@@ -1,4 +1,4 @@
-FROM irreverentpixelfeats/dev-base:ubuntu_xenial-20180427074524-90295cd
+FROM irreverentpixelfeats/dev-base:ubuntu_xenial-20180518002608-1e19e96
 MAINTAINER Dom De Re <domdere@irreverentpixelfeats.com>
 
 ARG GHC_VERSION
@@ -30,11 +30,11 @@ RUN mkdir -p ~/bin/packages/happy \
 #  && cabal install -j pointfree \
 #  && ln -sf ~/bin/packages/pointfree/.cabal-sandbox/bin/pointfree /usr/local/bin/pointfree
 
-RUN mkdir -p ~/bin/packages/hoogle \
-  && cd ~/bin/packages/hoogle \
-  && cabal sandbox init \
-  && cabal install -j hoogle \
-  && ln -sf ~/bin/packages/hoogle/.cabal-sandbox/bin/hoogle /usr/local/bin/hoogle
+#RUN mkdir -p ~/bin/packages/hoogle \
+#  && cd ~/bin/packages/hoogle \
+#  && cabal sandbox init \
+#  && cabal install -j hoogle \
+#  && ln -sf ~/bin/packages/hoogle/.cabal-sandbox/bin/hoogle /usr/local/bin/hoogle
 
 RUN mkdir -p ~/bin/packages/hasktags \
   && cd ~/bin/packages/hasktags \

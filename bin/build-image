@@ -10,8 +10,8 @@ TAG2="${TAG_PREFIX}-${GHC_VER}_${CABAL_VER}-${VERSION}"
 
 docker pull "${TAG1}" || true
 
+#--cache-from "${TAG1}" \
 docker build \
-  --cache-from "${TAG1}" \
   --tag "${TAG1}" \
   --tag "${TAG2}" \
   --build-arg "GHC_VERSION=${GHC_VER}" \
