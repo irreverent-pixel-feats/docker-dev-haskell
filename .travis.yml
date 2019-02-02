@@ -6,13 +6,13 @@ services:
 
 matrix:
   include:
-  - env: GHCVER=8.2.2 CABALVER=1.24
-  - env: GHCVER=8.2.2 CABALVER=2.0
-  - env: GHCVER=8.4.3 CABALVER=1.24
-  - env: GHCVER=8.4.3 CABALVER=2.0
+  - env: GHCVER=8.4.4 CABALVER=1.24
+  - env: GHCVER=8.4.4 CABALVER=2.0
+  - env: GHCVER=8.6.2 CABALVER=1.24
+  - env: GHCVER=8.6.2 CABALVER=2.0
 
 script:
-  - travis_wait 90 bin/ci
+  - timeout 35m bin/ci
 
 notifications:
   slack:

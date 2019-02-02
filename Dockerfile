@@ -8,7 +8,7 @@ RUN apt-get update -y \
   && apt-add-repository -y "ppa:hvr/ghc" \
   && apt-get update -y \
   && apt-get install -y \
-    hie-${GHC_VERSION}=20180911155615-54a946e \
+    hie-${GHC_VERSION}=20190202085253-3f78157 \
     ghc-${GHC_VERSION} \
     cabal-install-${CABAL_VER} \
   && ln -sf /opt/ghc/bin/* /usr/local/bin \
