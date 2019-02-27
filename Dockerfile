@@ -43,7 +43,7 @@ RUN mkdir -p ~/bin/packages/hasktags \
   && cd ~/bin/packages/hasktags \
   && cabal sandbox init \
   && cabal install -j hasktags \
-  && ln -sf ~/bin/packages/hoogle/.cabal-sandbox/bin/hasktags /usr/local/bin/hasktags
+  && ln -sf ~/bin/packages/hasktags/.cabal-sandbox/bin/hasktags /usr/local/bin/hasktags
 
 ADD data tmp
 
